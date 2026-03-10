@@ -1,4 +1,3 @@
-import axios from "axios";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import Register from "./Components/Register/Register";
@@ -6,7 +5,7 @@ import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
 import Auth from "./Components/Auth/Auth";
 import { HeroUIProvider } from "@heroui/react";
-import AuthContextProvider from "./context/AuthContext";
+import AuthContextProvider from "./Context/AuthContext";
 import Profile from "./Components/Profile/Profile";
 import ProtectedRoutes from "./Components/ProtectedRoutes/ProtectedRoutes";
 import AuthProtectedRoutes from "./Components/AuthProtectedRoutes/AuthProtectedRoutes";
@@ -104,7 +103,7 @@ const router = createBrowserRouter([
       {
         path: "*",
         element: (
-          <div className="bg-gray-600 flex justify-center items-center text-white h-screen">
+          <div className="flex h-screen items-center justify-center bg-gray-600 text-white">
             <h2 className="text-3xl font-bold">404</h2>
           </div>
         ),

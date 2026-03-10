@@ -18,11 +18,12 @@ export default function AuthContextProvider({ children }) {
     setuserToken(null);
   }
 
-  // decode token
   useEffect(() => {
     if (userToken) {
       const decodedToken = jwtDecode(userToken);
       setuserId(decodedToken.user);
+    } else {
+      setuserId(null);
     }
   }, [userToken]);
 
@@ -34,12 +35,12 @@ export default function AuthContextProvider({ children }) {
     queryKey: ["getProfile"],
     queryFn: async () => {
       const res = await axios.get(
-        `https://route-posts.routemisr.com/users/profile-data`,
+        "https://route-posts.routemisr.com/users/profile-data",
         {
           headers: { Authorization: `Bearer ${userToken}` },
         },
       );
-      return res.data.data.user; // نرجع مباشرة user
+      return res.data.data.user;
     },
     enabled: !!userToken,
   });
