@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Navbar from "../Navbar/Navbar";
 import { Outlet } from "react-router-dom";
-import { authContext } from "../../context/AuthContext";
+import { authContext } from "../../Context/AuthiContext";
 
 export default function Layout() {
   const { userToken } = useContext(authContext);

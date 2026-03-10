@@ -11,7 +11,7 @@ import {
 } from "@heroui/react";
 import route from "../../assets/images/route.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { authContext } from "../../context/AuthContext";
+
 import { useContext } from "react";
 import {
   LuHouse,
@@ -20,6 +20,7 @@ import {
   LuMenu,
   LuSettings,
 } from "react-icons/lu";
+import { authContext } from "../../Context/AuthiContext";
 
 export default function MyNavbar() {
   const location = useLocation();

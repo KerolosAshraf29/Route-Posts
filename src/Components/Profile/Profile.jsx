@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { authContext } from "../../context/AuthContext";
 import ProfileCard from "../ProfileCard/ProfileCard";
 import Loader from "../Loader/Loader";
+import { authContext } from "../../Context/AuthiContext";
 
 export default function Profile() {
   const { userData } = useContext(authContext);

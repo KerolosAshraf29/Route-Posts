@@ -12,8 +12,9 @@ import {
   LuSearch,
 } from "react-icons/lu";
 import { FaRegBookmark } from "react-icons/fa";
-import { authContext } from "../../context/AuthContext";
+
 import Loader from "../Loader/Loader";
+import { authContext } from "../../Context/AuthiContext";
 
 export default function Home() {
   const [active, setActive] = useState("feed");

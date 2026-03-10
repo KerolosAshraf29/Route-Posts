@@ -1,13 +1,14 @@
 import React, { useContext, useMemo, useState } from "react";
 import axios from "axios";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { authContext } from "../../context/AuthContext";
+
 import {
   LuEllipsis,
   LuPencil,
   LuTrash2,
   LuSendHorizontal,
 } from "react-icons/lu";
+import { authContext } from "../../Context/AuthiContext";
 
 export default function CommentCard({ comment, queryKey, postId }) {
   const {

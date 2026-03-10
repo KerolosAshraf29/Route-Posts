@@ -5,7 +5,6 @@ import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
 import Auth from "./Components/Auth/Auth";
 import { HeroUIProvider } from "@heroui/react";
-import AuthContextProvider from "./Context/AuthContext";
 import Profile from "./Components/Profile/Profile";
 import ProtectedRoutes from "./Components/ProtectedRoutes/ProtectedRoutes";
 import AuthProtectedRoutes from "./Components/AuthProtectedRoutes/AuthProtectedRoutes";
@@ -14,6 +13,7 @@ import PostDetails from "./Components/PostDetails/PostDetails";
 import UserProfile from "./Components/UserProfile/UserProfile";
 import Notification from "./Components/Notification/Notification";
 import ChangePassword from "./Components/ChangePassword/ChangePassword";
+import AuthContextProvider from "./Context/AuthiContext";
 
 const router = createBrowserRouter([
   {

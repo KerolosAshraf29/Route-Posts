@@ -10,8 +10,9 @@ import { IoMdClose } from "react-icons/io";
 import { IoSend } from "react-icons/io5";
 import axios from "axios";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { authContext } from "../../context/AuthContext";
+
 import { Link } from "react-router-dom";
+import { authContext } from "../../Context/AuthiContext";
 
 export default function PostCreation({ queryKey }) {
   const { userData } = useContext(authContext);

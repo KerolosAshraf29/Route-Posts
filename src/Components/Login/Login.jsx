@@ -10,7 +10,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { authContext } from "../../context/AuthContext";
+import { authContext } from "../../Context/AuthiContext";
+
 const loginSchema = zod.object({
   email: zod.email("Emai is not match"),
   password: zod

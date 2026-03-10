@@ -23,10 +23,11 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "@heroui/react";
-import { authContext } from "../../context/AuthContext";
+
 import { useMutation, useQueryClient, useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import EditPost from "../EditPost/EditPost";
+import { authContext } from "../../Context/AuthiContext";
 
 export default function PostCard({ postInfo, queryKey }) {
   const {

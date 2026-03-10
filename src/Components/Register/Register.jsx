@@ -10,7 +10,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { authContext } from "../../context/AuthContext";
+import { authContext } from "../../Context/AuthiContext";
 
 const registerSchema = zod
   .object({
